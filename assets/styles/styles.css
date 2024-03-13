@@ -1,0 +1,245 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+
+/*********** TOP CONTAINER ***********/
+.top-container {
+    position: relative;
+    text-align: center;
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.top-title {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(28, 28, 244);
+    background-color: rgba(0, 157, 255, 0.463);
+    border-radius: 5px;
+}
+
+.top-title h1 {
+    margin: auto;
+    padding: 20px;
+    font-size: 4rem;
+}
+
+.bottom-title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(28, 28, 244);
+    background-color: rgba(0, 157, 255, 0.463);
+    border-radius: 5px;
+}
+
+.bottom-title h2 {
+    margin: auto;
+    padding: 20px;
+    font-size: 1.55rem;
+    font-weight: 800;
+}
+
+.top-snowflake {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 75px;
+    height: auto;
+}
+
+.bottom-snowflake {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    width: 75px;
+    height: auto;
+}
+
+/*********** MIDDLE CONTAINER ***********/
+
+.middle-container {
+    margin: 100px 0;
+    text-align: center;
+}
+
+.profile img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.profile h2 {    
+    color: rgb(28, 28, 244);
+}
+
+.intro {
+    max-width: 500px;
+    margin: auto;
+    line-height: 2;
+}
+
+hr {
+    border: dotted #eaf6f6 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 100px auto;
+}
+
+h2 {
+    color: rgb(28, 28, 244);
+    font-size: 2.5rem;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: repeat(1, 1fr);
+    width: 50%;
+    margin: 100px auto 0 auto;
+    text-align: left;
+    row-gap: 2rem;
+}
+
+.typing img, .videogames img {
+    max-width: 250px;
+    height: auto;
+}
+
+.coding h3, .gaming h3 {
+    color: rgb(28, 28, 244);
+    margin-top: 0;
+}
+
+.coding, .gaming {
+    padding-left: 25px;
+}
+
+.contact-message {
+    max-width: 500px;
+    margin: auto;
+    line-height: 2;
+    margin-bottom: 5rem;
+}
+
+.btn {
+    color: white;
+    background-color: rgb(28, 28, 244);
+    padding: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn:hover {    
+    background-color: rgb(120, 120, 254);
+}
+
+/*********** BOTTOM CONTAINER ***********/
+
+.bottom-container {
+    text-align: center;
+    padding: 50px;
+    background-color: rgb(28, 28, 244);
+}
+
+.bottom-container a {
+    color: rgb(16, 16, 135);
+    margin: 0 15px 0px 15px;
+}
+
+.bottom-container a:hover {
+    color: white;
+}
+
+.copyright {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/*********** MEDIA QUERIES ***********/
+
+/*
+Mobile Devices: 319px — 480px
+iPads and Tablets: 481px — 1200px
+Laptops: 1201px — 1600px
+Desktops: 1601px and more
+*/
+
+@media (min-width: 319px) and (max-width: 480px) {
+    .top-title h1 {
+        margin: auto;
+        padding: 10px;
+        font-size: 2.75rem;
+    }
+
+    .bottom-title {
+        top: 70%;
+    }
+
+    .bottom-title h2 {
+        font-size: 1rem;
+    }
+
+    .parent {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+  
+    .parent > div {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .coding, .gaming {
+        padding-left: 0px;
+    }
+
+    .contact-message, .intro {
+        padding: 40px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1200px) {
+    .top-title h1 {
+        margin: auto;
+        padding: 10px;
+        font-size: 3rem;
+    }
+
+    .bottom-title {
+        top: 50%;
+    }
+
+    .bottom-title h2 {
+        font-size: 1rem;
+    }
+
+    .parent {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+  
+    .parent > div {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .coding, .gaming {
+        padding-left: 0px;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1600px) {
+    .bottom-title {
+        top: 55%;
+    }
+}
